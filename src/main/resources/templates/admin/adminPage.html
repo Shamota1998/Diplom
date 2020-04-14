@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/admin.css" type="text/css">
+    <link rel="stylesheet" href="../../static/CSS/css/fontawesome/all.min.css" type="text/css">
+    <link rel="shortcut icon" href="../../static/images/icon2.png">
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+<!--    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"-->
+<!--            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>-->
+
+<!--    <link href="../../static/css/spring-core.css"-->
+<!--          th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>-->
+    <title>Cosmo-Electronics</title>
+</head>
+<body>
+<header>
+
+    <div class="header_bg"></div>
+
+    <a href="/mainpage" class="logo"><img src="../../static/images/logo1.png" ></a>
+    <div class="header_item headerlogo"></div>
+<!--    <a href="/login" class="author">Authorization</a>-->
+<!--    <a href="reg.jsp" class="registration">Registration</a>-->
+    <a href="account.jsp" class="userAccount">Account </a><br>
+    <div class="phone" align="right"><i class="fa fa-phone"></i>Phone Number: 022-77-43-16 </div>
+    <div class="d5">
+    </div>
+    <div class = "menu-back">
+        <div class="border">
+            <nav class = "menu">
+                <ul>
+                    <li><a href = "/mainpage">Main page</a></li>
+                    <li><a href = "goods.jsp">Goods</a></li>
+                    <li><a href = "/main/aboutUs">About company</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<ul>
+    <li><a href="admin/listOfDevices">List of Devices</a></li>
+</ul>
+</body>
+</html>

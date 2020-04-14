@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/CSS/cart.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/CSS/css/fontawesome/all.min.css}" type="text/css">
+    <link rel="shortcut icon" th:href="@{images/icon2.png}">
+    <link rel="stylesheet" th:href="@{//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css}">
+    <script th:src="@{https://code.jquery.com/jquery-1.12.4.js}"></script>
+    <script th:src="@{https://code.jquery.com/ui/1.12.1/jquery-ui.js}"></script>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <title>Cosmo-Electronics</title>
+</head>
+<body>
+<header>
+
+    <div class="header_bg"></div>
+
+    <a th:href="@{/mainpage}" class="logo"><img th:src="@{/images/logo1.png}"></a>
+
+    <div class="header_item headerlogo"></div>
+    <div class="mycart-desc"><p>My Cart</p></div>
+    <a th:href="@{/myCart}" class="cart"> <i class="fas fa-cart-arrow-down"></i> </a>
+    <div class="phone" align="right"><i class="fa fa-phone"></i> 022-77-43-16</div>
+    <div class="viber" align="right"><i class="fab fa-viber"></i> 022-78-34-16</div>
+    <div class="d5">
+    </div>
+    <div class="menu-back">
+        <div class="border">
+            <nav class="menu">
+                <ul>
+                    <li><a th:href="@{/mainpage}">Main page</a></li>
+                    <li><a th:href="@{/list}">Goods</a></li>
+                    <li><a th:href="@{/delivery}">Delivery</a></li>
+                    <li><a th:href="@{/aboutUs}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="shopBody">
+    <div th:if="${#lists.isEmpty(devicesOnCart)}">
+        <div class="nothFound"><H2>Sorry your cart is Empty!</H2></div>
+    </div>
+    <div th:if="${not #lists.isEmpty(devicesOnCart)}">
+        <H2 style="text-align: center">Goods on Cart:</H2>
+        <table class="table table-striped">
+
+            <tr>
+                <th>Device Description</th>
+                <th>Price</th>
+                <th>Producer</th>
+                <th>QTY</th>
+                <th>Approved</th>
+                <th>Remove</th>
+            </tr>
+            <form th:action="@{/makeOrder}" th:object="${OrderList}" th:method="POST">
+
+                <tr th:each="device : ${devicesOnCart}">
+                    <!--                <input type="hidden" th:text="${device.getDev_id()}">-->
+                    <td th:text="${device.getDevice_desc()}"></td>
+                    <td th:text="${device.getPrice()} + '$'"></td>
+                    <td th:text="${device.getProducer().getFirmDesc()}"></td>
+
+                    <td>
+                        <select th:name="qty" th:id="qty">
+                            <option th:each="i : ${#numbers.sequence(1, device.getQTY())}"  th:value="${i}"
+                                    th:text="${i}" th:field="*{qty}">
+                            </option>
+                        </select>
+
+                    </td>
+                    <td>
+                        <input type="checkbox" th:field="*{dev}" th:value="${device.getDev_id()}"/>
+
+                    </td>
+                    <!--                    <td>-->
+                    <!--                        <input type="submit" value="Make Order"/>-->
+                    <!--                    </td>-->
+                    <td><a th:href="@{'/deleteFormCart/' + ${device.getDev_id()}}">Delete</a></td>
+                <tr>
+                    <td>
+                        <input type="submit" value="Make Order" id="makeOrder"/>
+                    </td>
+                </tr>
+            </form>
+            <!--                <td><a th:href="@{'/makeOrder/' + ${device.getDev_id()}}">Make Order</a></td>-->
+
+        </table>
+
+    </div>
+
+    <form th:action="@{/makeOrder}" th:object="${OrderList}" th:method="POST">
+        <input type="hidden" th:each="devic : ${devicesOnCart}" th:field="*{dev}">
+    </form>
+
+</div>
+
+
+
+<!--            <form th:action="@{/makeOrder}"  th:method="POST">-->
+
+<!--                <tr th:each="device : ${devicesOnCart}">-->
+<!--                    <div th:each="order : ${OrderList}" th:object="${OrderList}">-->
+<!--                    &lt;!&ndash;                <input type="hidden" th:text="${device.getDev_id()}">&ndash;&gt;-->
+<!--                    <td th:text="${device.getDevice_desc()}"></td>-->
+<!--                    <td th:text="${device.getPrice()}"></td>-->
+<!--                    <td th:text="${device.getProducer().getFirmDesc()}"></td>-->
+
+<!--                    <td>-->
+<!--                        <select th:name="qty" th:id="qty">-->
+<!--                            <option th:each="i : ${#numbers.sequence(1, device.getQTY())}" th:value="${i}"-->
+<!--                                    th:text="${i}" th:field="${order.setQTY}">-->
+<!--                            </option>-->
+<!--                        </select>-->
+
+<!--                    </td>-->
+<!--                    <td>-->
+<!--                        <input type="checkbox" th:field="${Order.dev}" th:value="${device.getDev_id()}"/>-->
+
+<!--                    </td>-->
+<!--                    <td><a th:href="@{'/deleteFormCart/' + ${device.getDev_id()}}">Delete</a></td>-->
+<!--                </div>-->
+<!--                <tr>-->
+<!--                    <td>-->
+<!--                        <input type="submit" value="Make Order" id="makeOrder"/>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </form>-->
+<!--            &lt;!&ndash;                <td><a th:href="@{'/makeOrder/' + ${device.getDev_id()}}">Make Order</a></td>&ndash;&gt;-->
+
+<!--        </table>-->
+
+<!--    </div>-->
+
+<!--    <form th:action="@{/makeOrder}" th:object="${OrderList}" th:method="POST">-->
+<!--        <input type="hidden" th:each="devic : ${devicesOnCart}" th:field="*{dev}">-->
+<!--    </form>-->
+
+<!--</div>-->
+
+
+<div class="myfooter">
+
+    <div class="footermenu1">
+        <br/>
+        <H3 id="t">For Customer</H3>
+        <ul>
+            <li type="circle"><a href="#" title="How to place an orders on the site">How to place an orders on the
+                site</a>
+            </li>
+            <br/>
+            <li type="circle"><a href="#" title="Delivery">Delivery</a></li>
+            <br/>
+            <li type="circle"><a href="#" title="Installment and loan">Installment and loan</a></li>
+            <br/>
+            <li type="circle"><a href="#" title="Bonus Card">Bonus Card</a></li>
+            <br/>
+            <li type="circle"><a href="#" title="Bank transfer payment">Bank transfer payment</a></li>
+        </ul>
+    </div>
+    <div class="footermenu2">
+        <h3 id="t2">Services</h3>
+        <ul>
+            <li type="circle"><a href="#" title="warranty service">Warranty service</a></li>
+            <br/>
+        </ul>
+    </div>
+
+
+    <div class="footermenu3">
+        <h3 id="t3">About company</h3>
+        <ul>
+            <li type="circle"><a href="#" title="Contacts">Contacts</a></li>
+            <br/>
+            <li type="circle"><a href="#" title="Work in our company">Work in our company</a></li>
+            <br/>
+            <li type="circle"><a href="#" title="About us">About us</a></li>
+        </ul>
+    </div>
+
+
+    <div class="footermenu4">
+        <h3 id="t4">Payment Methods</h3>
+        <img th:src="@{/images/mastercard.png}" id="master">
+        <img th:src="@{/images/visa.png}" id="visa">
+        <img th:src="@{/images/webmoney.png}" id="webmoney">
+    </div>
+
+
+    <div class="mycontainer">
+        <h3 id="t5">Join Us</h3>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-vk"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+</div>
+<div class="footer2">
+    <p>Copyright Cosmo-Electronics 2019-2020 </p>
+</div>
+</body>
+</html>
