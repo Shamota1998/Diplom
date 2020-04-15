@@ -73,15 +73,11 @@
                                     th:text="${i}" th:field="*{qty}">
                             </option>
                         </select>
-
                     </td>
                     <td>
                         <input type="checkbox" th:field="*{dev}" th:value="${device.getDev_id()}"/>
 
                     </td>
-                    <!--                    <td>-->
-                    <!--                        <input type="submit" value="Make Order"/>-->
-                    <!--                    </td>-->
                     <td><a th:href="@{'/deleteFormCart/' + ${device.getDev_id()}}">Delete</a></td>
                 <tr>
                     <td>

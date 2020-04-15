@@ -110,17 +110,6 @@
                         </ul>
                     </div>
 
-                    <!--                    <div class="cat">-->
-                    <!--                        <div th:each="categ : ${categoryList}" class="mycheckbox">-->
-
-                    <!--                            <input type="checkbox" id="category" name="category"-->
-                    <!--                                   th:field="*{category}"-->
-                    <!--                                   th:value="${categ.getCat_id().intValue()}"-->
-                    <!--                                   checked="checked" />-->
-                    <!--                            <label th:text="${categ.getCat_desc()}" for="category"></label>-->
-
-                    <!--                        </div>-->
-                    <!--                    </div>-->
                 </div>
                 <div class="firmpanel">
                     <div class="firmtitle">
@@ -141,22 +130,6 @@
                     <div class="title3">
                         <h3>Price Sort</h3>
                     </div>
-                    <!--                    <p>-->
-                    <!--                        <input type="radio"-->
-                    <!--                               id="asc"-->
-                    <!--                               name="radio-group"-->
-                    <!--                               checked th:field="*{sort}"-->
-                    <!--                               th:value="ASC">-->
-                    <!--                        <label for="asc">Ascending</label>-->
-                    <!--                    </p>-->
-                    <!--                    <p>-->
-                    <!--                        <input type="radio"-->
-                    <!--                               id="descend"-->
-                    <!--                               name="radio-group"-->
-                    <!--                               th:field="*{sort}"-->
-                    <!--                               th:value="DESC">-->
-                    <!--                        <label for="descend">Descending</label>-->
-                    <!--                    </p>-->
                     <div class="box">
                         <select th:field="*{sort}">
                             <option th:text="Ascending"
@@ -180,26 +153,26 @@
     </div>
     <!---->
 
-<!--    <div th:if="!${filtered}">-->
-<!--        <div class="goods-panel">-->
-<!--            <div th:each="product : ${allProducts.content}" class="myPanel">-->
-<!--                <div class="panel" style="border: dodgerblue 2px solid;">-->
-<!--                    <div class="sale">-->
-<!--                        <img th:src="@{/images/sale2.png}">-->
-<!--                    </div>-->
-<!--                    <div class="saletitle">sale</div>-->
-<!--                    <a href="#" class="img" >-->
-<!--                        <img th:src="@{/images/noutexample.jpg}" alt="nout">-->
-<!--                    </a>-->
-<!--                    <a class="product-link" th:text="${product.getDevice_desc()}"></a>-->
-<!--                    <span class="price w-c-price" th:text="${product.getPrice()}"></span>-->
-<!--                    <div class="AddToCart">-->
-<!--                        <a th:href="@{'/addToCart/' + ${product.getDev_id()}}">-->
-<!--                            <button name="addToCart"> Add to Cart</button>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+    <!--    <div th:if="!${filtered}">-->
+    <!--        <div class="goods-panel">-->
+    <!--            <div th:each="product : ${allProducts.content}" class="myPanel">-->
+    <!--                <div class="panel" style="border: dodgerblue 2px solid;">-->
+    <!--                    <div class="sale">-->
+    <!--                        <img th:src="@{/images/sale2.png}">-->
+    <!--                    </div>-->
+    <!--                    <div class="saletitle">sale</div>-->
+    <!--                    <a href="#" class="img" >-->
+    <!--                        <img th:src="@{/images/noutexample.jpg}" alt="nout">-->
+    <!--                    </a>-->
+    <!--                    <a class="product-link" th:text="${product.getDevice_desc()}"></a>-->
+    <!--                    <span class="price w-c-price" th:text="${product.getPrice()}"></span>-->
+    <!--                    <div class="AddToCart">-->
+    <!--                        <a th:href="@{'/addToCart/' + ${product.getDev_id()}}">-->
+    <!--                            <button name="addToCart"> Add to Cart</button>-->
+    <!--                        </a>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
     <div th:if="!${filtered}">
         <div class="goods-panel">
             <div th:each="product : ${allProducts}" class="myPanel">
@@ -209,13 +182,13 @@
                     </div>
                     <div class="saletitle">sale</div>
                     <div th:switch="${product.category.getCat_desc()}">
-                    <a th:case="Laptop" href="#" class="img" >
-                        <img th:src="@{/images/noutexample.jpg}" alt="nout">
-                    </a>
-                        <a th:case="PC" href="#" class="PC" >
+                        <a th:case="Laptop" href="#" class="img">
+                            <img th:src="@{/images/noutexample.jpg}" alt="nout">
+                        </a>
+                        <a th:case="PC" href="#" class="PC">
                             <img th:src="@{/images/PC.jpg}" alt="PC" style="width: 250px; height:160px">
                         </a>
-                        <a th:case="Smartphone" href="#" class="smart" >
+                        <a th:case="Smartphone" href="#" class="smart">
                             <img th:src="@{/images/phone.jpg}" alt="Smart" style="width: 250px; height:160px">
                         </a>
                     </div>
@@ -258,13 +231,13 @@
                         </div>
                         <div class="saletitle">sale</div>
                         <div th:switch="${product.category.getCat_desc()}">
-                            <a th:case="Laptop" href="#" class="img" >
+                            <a th:case="Laptop" href="#" class="img">
                                 <img th:src="@{/images/noutexample.jpg}" alt="nout">
                             </a>
-                            <a th:case="PC" href="#" class="PC" >
+                            <a th:case="PC" href="#" class="PC">
                                 <img th:src="@{/images/PC.jpg}" alt="PC" style="width: 250px; height:160px">
                             </a>
-                            <a th:case="Smartphone" href="#" class="smart" >
+                            <a th:case="Smartphone" href="#" class="smart">
                                 <img th:src="@{/images/phone.jpg}" alt="Smart" style="width: 250px; height:160px">
                             </a>
                         </div>

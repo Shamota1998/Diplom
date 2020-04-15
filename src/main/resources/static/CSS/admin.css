@@ -397,7 +397,7 @@ body {
 
 .shopBody {
     width: 1275px;
-    height: 550px;
+    height: 450px;
     display: block;
     background-color: white;
     border-bottom: 1px solid #0d6cbd;
@@ -405,3 +405,14 @@ body {
     margin-left: 300px;
     margin-top: -10px;
 }
+
+.adminSubmit{
+    position: relative;
+    margin-left: 50%;
+}
+
+/*.adminsForm{*/
+/*    border: #0d6cbd 1px solid;*/
+/*    padding-top: 10px;*/
+/*    padding-bottom: 10px;*/
+/*}*/

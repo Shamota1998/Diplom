@@ -97,7 +97,7 @@ body {
 .phone {
     position: absolute;
     size: 28px;
-    margin: -80px 1320px;
+    margin: -90px 1360px;
     margin-left: 40px 0px;
     font-size: 20px;
     white-space: pre;
@@ -412,7 +412,7 @@ position: absolute;
 .viber{
     position: absolute;
     size: 28px;
-    margin: -50px 1320px;
+    margin: -60px 1360px;
     margin-left: 10px 0px;
     white-space: pre;
     font-size: 25px;

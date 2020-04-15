@@ -1098,3 +1098,29 @@ input[type=checkbox]:checked:disabled + label:before {
     text-align: center;
     /*backface-visibility: inherit;*/
 }
+
+/*#category input[type="checkbox"]:checked + label:after,*/
+/*#category input[type="checkbox"]:not(:checked) + label:after*/
+/*{*/
+/*    -webkit-transition: all 0.2s ease;*/
+/*    -moz-transition: all 0.2s ease;*/
+/*    -o-transition: all 0.2s ease;*/
+/*    transition: all 0.2s ease;*/
+/*}*/
+
+
+/*#category.cat :checked + label:after,*/
+/*#category.cat:not(:checked) + label:after {*/
+/*    left: 3px;*/
+/*    top: 4px;*/
+/*    width: 10px;*/
+/*    height: 5px;*/
+/*    border-radius: 1px;*/
+/*    border-left: 4px solid #e145a3;*/
+/*    border-bottom: 4px solid #e145a3;*/
+/*    -webkit-transform: rotate(-45deg);*/
+/*    -moz-transform: rotate(-45deg);*/
+/*    -o-transform: rotate(-45deg);*/
+/*    -ms-transform: rotate(-45deg);*/
+/*    transform: rotate(-45deg);*/
+/*}*/
