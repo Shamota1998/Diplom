@@ -63,21 +63,11 @@
                 <td th:text="${device.getDevice().getCategory().getCat_desc()}"></td>
                 <td th:text="${device.getDevice().getPrice()} + '$'"></td>
                 <td th:text="${device.getQty()}"></td>
-                <!--                <td><a th:href="${'/producer/show/' + producer.prodID}">View</a></td>-->
-                <!--                <td><a th:href="${'/producer/edit/' + producer.prodID}">Edit</a></td>-->
-                <!--                <td><a th:href="${'/producer/delete/' + producer.prodID}">Delete</a></td>-->
-                <!--                th:action="@{/submitOrder(qty=${QTY}, deviceId=${orderedDevice.getDev_id()})}"-->
-                <!--            <tr>-->
-                <!--            <td id="totalPrice" th:text="'Total Price : ' + ${finalOrderList.get(0).getTotalPrice()}"></td>-->
-                <!--        </tr>-->
         </table>
         <p id="totalPrice" th:text="'Total Price : ' + ${finalOrderList.get(0).getTotalPrice()} + '$'"></p>
         <form th:action="@{/submitOrder}" th:object="${finalOrderList}" method="post">
             <input type="submit" id="submitOrder" value="Submit">
         </form>
-        <!--        <a th:href="@{/submitOrder(ord=${finalOrderList})}"><button>Submit</button></a>-->
-
-
     </div>
 </div>
 

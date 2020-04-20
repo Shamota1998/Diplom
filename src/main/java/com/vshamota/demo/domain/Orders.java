@@ -19,22 +19,10 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer order_id;
-//    @ManyToMany
-//    @JoinTable(
-//            name = "Order_Device",
-//            joinColumns = {@JoinColumn(name = "order_id")},
-//            inverseJoinColumns = {@JoinColumn(name = "dev_id")}
-//    )
-//    private List<Device> devices;
-
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
     private LocalDate date;
-
-//    private Integer QTY;
-
     @OneToMany(mappedBy = "order")
     private List<OrderDevice> orderDevices;
 

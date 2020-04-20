@@ -85,7 +85,8 @@ public class ProductsController {
                                     filterObj.getCategory(),
                                     filterObj.getMinPrice(),
                                     filterObj.getMaxPrice(),
-                                    producerRepo.findByFirmDesc(filterObj.getProducer())
+                                    producerRepo.findByFirmDesc(filterObj.getProducer()),
+                                    PageRequest.of(page, 6)
                             ));
             return "products/showProducts";
         }
@@ -96,7 +97,8 @@ public class ProductsController {
                                 filterObj.getCategory(),
                                 filterObj.getMinPrice(),
                                 filterObj.getMaxPrice(),
-                                producerRepo.findByFirmDesc(filterObj.getProducer())
+                                producerRepo.findByFirmDesc(filterObj.getProducer()),
+                                PageRequest.of(page, 6)
                         ));
         return "products/showProducts";
     }
@@ -141,7 +143,6 @@ public class ProductsController {
         Cart cartByUser = cartRepo.findCartByUser(user);
         cartByUser.addDevice(addDevice);
         cartRepo.save(cartByUser);
-
         return "redirect:/list";
     }
 }

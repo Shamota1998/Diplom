@@ -46,16 +46,15 @@
             <input type="text" name="firstname" placeholder="First Name" th:field="*{firstName}">
             <br>
             <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"
-                  style="font-family: Calibri; margin-left:14%; color:darkred"></span>
+                  style="font-family: Calibri; margin-left:14%; color:red"></span>
         </div>
         <br>
-
         <div class="lname">
             <label>Surname :</label>
             <input type="text" name="lastname" placeholder="Last Name" th:field="*{lastName}">
             <br>
             <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"
-                  style="font-family: Calibri; margin-left:20%; color:darkred"></span>
+                  style="font-family: Calibri; margin-left:20%; color:red"></span>
         </div>
         <br>
         <div class="login">
@@ -63,7 +62,7 @@
             <input type="text" name="login" placeholder="login" th:field="*{login}">
             <br>
             <span th:if="${#fields.hasErrors('login')}" th:errors="*{login}"
-                  style="font-family: Calibri; margin-left:14%; color:darkred"></span>
+                  style="font-family: Calibri; margin-left:14%; color:red"></span>
         </div>
         <br>
         <div class="pass">
@@ -71,7 +70,7 @@
             <input type="password" name="pass" placeholder="password" th:field="*{password}">
             <br>
             <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"
-                  style="font-family: Calibri; margin-left:14%; color:darkred"></span>
+                  style="font-family: Calibri; margin-left:14%; color:red"></span>
         </div>
         <br>
         <div class="rpass">

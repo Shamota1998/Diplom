@@ -87,7 +87,6 @@ public class OrderController {
         }
         cartRepo.save(cart);
         model.addAttribute("submitMessage", "Order was submitted!");
-
         return "products/order";
     }
 }

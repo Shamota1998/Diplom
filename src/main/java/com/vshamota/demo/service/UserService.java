@@ -8,7 +8,6 @@ import java.util.Set;
 
 @Data
 public class UserService {
-//    private User user;
 
     public static boolean checkUserPrivileges(User user){
         Set<Role> userRoles = user.getRoles();

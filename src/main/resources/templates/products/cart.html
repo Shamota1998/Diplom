@@ -69,7 +69,7 @@
 
                     <td>
                         <select th:name="qty" th:id="qty">
-                            <option th:each="i : ${#numbers.sequence(1, device.getQTY())}"  th:value="${i}"
+                            <option th:each="i : ${#numbers.sequence(1, device.getQTY())}" th:value="${i}"
                                     th:text="${i}" th:field="*{qty}">
                             </option>
                         </select>
@@ -85,7 +85,6 @@
                     </td>
                 </tr>
             </form>
-            <!--                <td><a th:href="@{'/makeOrder/' + ${device.getDev_id()}}">Make Order</a></td>-->
 
         </table>
 
@@ -96,50 +95,6 @@
     </form>
 
 </div>
-
-
-
-<!--            <form th:action="@{/makeOrder}"  th:method="POST">-->
-
-<!--                <tr th:each="device : ${devicesOnCart}">-->
-<!--                    <div th:each="order : ${OrderList}" th:object="${OrderList}">-->
-<!--                    &lt;!&ndash;                <input type="hidden" th:text="${device.getDev_id()}">&ndash;&gt;-->
-<!--                    <td th:text="${device.getDevice_desc()}"></td>-->
-<!--                    <td th:text="${device.getPrice()}"></td>-->
-<!--                    <td th:text="${device.getProducer().getFirmDesc()}"></td>-->
-
-<!--                    <td>-->
-<!--                        <select th:name="qty" th:id="qty">-->
-<!--                            <option th:each="i : ${#numbers.sequence(1, device.getQTY())}" th:value="${i}"-->
-<!--                                    th:text="${i}" th:field="${order.setQTY}">-->
-<!--                            </option>-->
-<!--                        </select>-->
-
-<!--                    </td>-->
-<!--                    <td>-->
-<!--                        <input type="checkbox" th:field="${Order.dev}" th:value="${device.getDev_id()}"/>-->
-
-<!--                    </td>-->
-<!--                    <td><a th:href="@{'/deleteFormCart/' + ${device.getDev_id()}}">Delete</a></td>-->
-<!--                </div>-->
-<!--                <tr>-->
-<!--                    <td>-->
-<!--                        <input type="submit" value="Make Order" id="makeOrder"/>-->
-<!--                    </td>-->
-<!--                </tr>-->
-<!--            </form>-->
-<!--            &lt;!&ndash;                <td><a th:href="@{'/makeOrder/' + ${device.getDev_id()}}">Make Order</a></td>&ndash;&gt;-->
-
-<!--        </table>-->
-
-<!--    </div>-->
-
-<!--    <form th:action="@{/makeOrder}" th:object="${OrderList}" th:method="POST">-->
-<!--        <input type="hidden" th:each="devic : ${devicesOnCart}" th:field="*{dev}">-->
-<!--    </form>-->
-
-<!--</div>-->
-
 
 <div class="myfooter">
 

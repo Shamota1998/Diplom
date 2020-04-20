@@ -27,10 +27,6 @@ public class CartController {
     @GetMapping("/myCart")
     public String getCartPage(Model model, @AuthenticationPrincipal User user) {
         model.addAttribute("devicesOnCart", cartRepo.findCartByUser(user).getDevices());
-//
-//        List<OrderDTO> orderList = new ArrayList<>();
-//        model.addAttribute("OrderList", orderList);
-//        model.addAttribute("Order", new OrderDTO());
         model.addAttribute("OrderList", new OrderDTO());
         return "products/cart";
     }

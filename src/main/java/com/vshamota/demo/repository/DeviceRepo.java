@@ -11,19 +11,34 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import java.util.Collection;
 import java.util.List;
 
-public interface DeviceRepo extends CrudRepository<Device, Integer>, PagingAndSortingRepository<Device, Integer> {
+public interface DeviceRepo extends CrudRepository<Device, Integer>,
+                                    PagingAndSortingRepository<Device, Integer> {
 
-    List<Device> findAllByCategoryInAndPriceBetweenAndProducerEqualsOrderByPriceAsc(
-            Collection<Category> categories, float min, float max, Producer producer);
+    Page<Device> findAllByCategoryInAndPriceBetweenAndProducerEqualsOrderByPriceAsc(
+            Collection<Category> categories,
+            float min,
+            float max,
+            Producer producer,
+            Pageable pageable);
 
-    List<Device> findAllByCategoryInAndPriceBetweenAndProducerEqualsOrderByPriceDesc(
-            Collection<Category> categories, float min, float max, Producer producer);
+    Page<Device> findAllByCategoryInAndPriceBetweenAndProducerEqualsOrderByPriceDesc(
+            Collection<Category> categories,
+            float min,
+            float max,
+            Producer producer,
+            Pageable pageable);
 
     Page<Device> findAllByCategoryInAndPriceBetweenOrderByPriceAsc(
-            Collection<Category> categories, float min, float max, Pageable pageable);
+            Collection<Category> categories,
+            float min,
+            float max,
+            Pageable pageable);
 
     Page<Device> findAllByCategoryInAndPriceBetweenOrderByPriceDesc(
-            Collection<Category> categories, float min, float max, Pageable pageable);
+            Collection<Category> categories,
+            float min,
+            float max,
+            Pageable pageable);
 
     @Override
     Page<Device> findAll(Pageable pageable);

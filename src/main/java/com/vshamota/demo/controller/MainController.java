@@ -7,15 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @RequiredArgsConstructor
 @Controller
-public class mainController {
+public class MainController {
     @GetMapping("/mainpage")
     public String getMainPage() {
-//        Boolean rights = false;
-//        Set<Role> userRoles = user.getRoles();
-//        if(userRoles.contains("ADMIN")){
-//            rights=true;
-//        }
-//        model.addAttribute("rights", rights);
+
         return "user/main";
     }
 

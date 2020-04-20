@@ -87,6 +87,39 @@
 
             </form>
         </div>
+
+            <H2>Goods List</H2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Id</th>
+                    <th>Device_desc</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                    <th>Category</th>
+                    <th>Producer</th>
+                    <th>Remove</th>
+                </tr>
+                <tr th:each="product : ${all}">
+                    <td th:text="${product.getDev_id()}"></td>
+                    <td th:text="${product.getDevice_desc()}"></td>
+                    <td th:text="${product.getPrice()}"></td>
+                    <td th:text="${product.getQTY()}"></td>
+                    <td th:text="${product.getCategory().getCat_desc()}"></td>
+                    <td th:text="${product.getProducer().getFirmDesc()}"></td>
+                    <td><a th:href="${'/admin/delete/' + product.getDev_id()}">Delete</a></td>
+            </table>
+        <div class="page">
+            <nav aria-label=".pagination-lg">
+                <ul class="pagination pagination-lg">
+
+                    <li class="page-item" th:each="i : ${#numbers.sequence(0, all.getTotalPages()-1)}">
+                        <a class="page-link" th:href="@{/admin/newDevices/(page=${i})}" th:text="${i}" th:method="post"></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        </div>
     </div>
 </div>
 

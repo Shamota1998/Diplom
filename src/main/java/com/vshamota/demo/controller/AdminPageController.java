@@ -6,36 +6,34 @@ import com.vshamota.demo.repository.CategoryRepo;
 import com.vshamota.demo.repository.DeviceRepo;
 import com.vshamota.demo.repository.ProducerRepo;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
+
+import javax.transaction.Transactional;
 
 @RequiredArgsConstructor
 @Controller
-public class adminPageController {
+public class AdminPageController {
     private final DeviceRepo deviceRepo;
     private final ProducerRepo producerRepo;
     private final CategoryRepo categoryRepo;
 
-    @GetMapping("admin/adminPage")
-    public String getAdminPage(){
-        return "admin/adminPage";
-    }
-
-    @GetMapping("admin/listOfDevices")
-    public String getList(Model model){
-        model.addAttribute("listOfDevices", deviceRepo.findAll());
-        return "admin/listOfDevices";
-    }
-
     @GetMapping(value = "admin/newDevices")
-    public String addOrEditDevice(Model model){
+    public String addOrEditDevice(Model model,  @RequestParam(defaultValue = "0") int page){
+        model.addAttribute("all", deviceRepo.findAll(PageRequest.of(page, 5)));
         model.addAttribute("newDevice", new NewDeviceFormDTO());
         model.addAttribute("listOfCategories", categoryRepo.findAll());
         model.addAttribute("listOfProducers", producerRepo.findAll());
         return "admin/newDevice";
+    }
+
+    @Transactional
+    @GetMapping("admin/delete/{id}")
+    public String delete(@PathVariable Integer id) {
+        deviceRepo.deleteById(id);
+        return "redirect:/admin/newDevices";
     }
 
 

@@ -34,11 +34,13 @@ public class RegistrationController {
     }
 
     @PostMapping("user/registration")
-    public String addUser(@ModelAttribute("newUser") @Valid UserRegistrationDTO newUser, BindingResult bindingResult, Model model) {
+    public String addUser(@ModelAttribute("newUser") @Valid UserRegistrationDTO newUser,
+                          BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             model.addAttribute("cities", cityRepo.findAll());
             return "user/registration";
         }
+        //...Some actions
         User addUser = new User();
         addUser.setLogin(newUser.getLogin());
         addUser.setPassword(new BCryptPasswordEncoder().encode(newUser.getPassword()));
