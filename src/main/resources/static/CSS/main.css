@@ -64,7 +64,7 @@ body {
 .phone {
     position: absolute;
     size: 28px;
-    margin: -90px 1360px;
+    margin: -70px 1360px;
     /*margin-left: 40px 0px;*/
     white-space: pre;
     font-size: 25px;
@@ -797,7 +797,7 @@ margin-left: 280px;
 .viber{
     position: absolute;
     size: 28px;
-    margin: -60px 1360px;
+    margin: -40px 1360px;
     margin-left: 40px 0px;
     font-size: 20px;
     white-space: pre;
@@ -807,7 +807,7 @@ margin-left: 280px;
 }
 
 .cart {
-    margin: -160px 1430px;
+    margin: -140px 1460px;
     position: absolute;
     font-size: 50px;
     color:#0d6cbd;
@@ -815,7 +815,7 @@ margin-left: 280px;
 }
 .mycart-desc{
     position: absolute;
-    margin: -160px 1365px;
+    margin: -140px 1385px;
     width: 70px;
     font-family: "Berlin Sans FB";
     font-size: larger;
@@ -837,4 +837,20 @@ margin-left: 280px;
 
 .annotation{
 
+}
+
+.logout{
+    position: absolute;
+    margin: -190px 1430px;
+}
+
+.logout button{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: dodgerblue;
+    color: white;
+    font-family: Calibri;
+    font-size: 14px;
+    font-weight: 700;
 }

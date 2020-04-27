@@ -188,7 +188,7 @@ body {
 
 .container1{
     width:450px;
-    height: 450px;
+    height: 500px;
     background-color: rgba(24,33,52, 0.7);
     margin:150px auto 0 auto;
     text-align: center;
@@ -274,6 +274,10 @@ body {
 
 .dws-input input:hover{
     box-shadow:  0 0 6px 3px rgba(58,219,253,0.35);
+}
+
+.social{
+    margin-top: 20px;
 }
 
 .social i{
@@ -874,4 +878,58 @@ body {
     font-size: 25px;
     font-family: monospace;
     opacity: 1;
+}
+
+.remember{
+    color: white;
+}
+
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    padding-left: 15px;
+
+}
+
+/*input[type=checkbox] {*/
+/*    display: none;*/
+/*}*/
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.4em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
 }
