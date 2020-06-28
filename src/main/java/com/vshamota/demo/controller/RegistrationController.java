@@ -40,7 +40,6 @@ public class RegistrationController {
             model.addAttribute("cities", cityRepo.findAll());
             return "user/registration";
         }
-        //...Some actions
         User addUser = new User();
         addUser.setLogin(newUser.getLogin());
         addUser.setPassword(new BCryptPasswordEncoder().encode(newUser.getPassword()));
@@ -58,7 +57,6 @@ public class RegistrationController {
         userDetails.setUser(addUser);
         userDetails.setAddress(address);
         userDetailsRepo.save(userDetails);
-//        -------
         Cart cart = new Cart();
         cart.setUser(addUser);
         cartRepo.save(cart);

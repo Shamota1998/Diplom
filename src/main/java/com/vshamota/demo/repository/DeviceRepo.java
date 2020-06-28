@@ -9,7 +9,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.Collection;
-import java.util.List;
 
 public interface DeviceRepo extends CrudRepository<Device, Integer>,
                                     PagingAndSortingRepository<Device, Integer> {

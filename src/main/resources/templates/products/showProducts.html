@@ -207,7 +207,7 @@
                     <ul class="pagination pagination-lg">
 
                         <li class="page-item" th:each="i : ${#numbers.sequence(0, allProducts.getTotalPages()-1)}">
-                            <a class="page-link" th:href="@{/list/(page=${i})}" th:text="${i}" th:method="post"></a>
+                            <a class="page-link" th:href="@{/list/(page=${i})}" th:text="${i+1}" th:method="post"></a>
                         </li>
 
                     </ul>
@@ -221,7 +221,6 @@
         <!--    <H2 th:if="${#lists.isEmpty(filtredProducts)}" class="nothFound"> Nothing found!</H2>-->
         <!--    <div th:if="${not #lists.isEmpty(filtredProducts)}">-->
         <div class="goods-panel2">
-            <H2 th:if="${#lists.isEmpty(filtredProducts)}" class="nothFound"> Nothing found!</H2>
             <div th:if="${not #lists.isEmpty(filtredProducts)}">
                 <div th:each="product : ${filtredProducts}" style="margin: 25px; display:inline-block">
                     <div class="panel" style="border: dodgerblue 2px solid;">

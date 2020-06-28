@@ -16,8 +16,8 @@
 
     <a th:href="@{/mainpage}" class="logo"><img th:src="@{/images/logo1.png}"></a>
 <!--    <a th:href="@{/logout}" th:method="POST"><button>Logout</button></a>-->
-    <a href="#" onclick="document.getElementById('logout-form').submit();" class="logout"><button>Logout </button></a>
-    <form id="logout-form" th:action="@{/logout}" method="post">
+<!--    <a href="#" onclick="document.getElementById('logout-form').submit();" class="logout"><button>Logout </button></a>-->
+<!--    <form id="logout-form" th:action="@{/logout}" method="post">-->
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     </form>
     <div class="header_item headerlogo"></div>

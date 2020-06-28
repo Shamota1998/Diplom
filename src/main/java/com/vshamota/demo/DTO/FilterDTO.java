@@ -14,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FilterDTO {
+    
     private Float minPrice;
     private Float maxPrice;
     private List<Category> category;

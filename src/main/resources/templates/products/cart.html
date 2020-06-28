@@ -75,7 +75,7 @@
                         </select>
                     </td>
                     <td>
-                        <input type="checkbox" th:field="*{dev}" th:value="${device.getDev_id()}"/>
+                        <input type="checkbox" th:field="*{dev}" th:value="${device.getDev_id()}" checked="checked"/>
 
                     </td>
                     <td><a th:href="@{'/deleteFormCart/' + ${device.getDev_id()}}">Delete</a></td>

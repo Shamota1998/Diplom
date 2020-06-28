@@ -4,14 +4,17 @@ import com.vshamota.demo.domain.City;
 import com.vshamota.demo.domain.Country;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 public class UserRegistrationDTO {
     @NotEmpty
     @Pattern(regexp = "^[A-Za-z]{3,15}", message =  "Name should contain alphabetic symbols(3-15)")
