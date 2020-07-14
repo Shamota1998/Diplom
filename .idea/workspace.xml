@@ -1,0 +1,456 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d3f49f8-0eda-42a4-b49b-29035bd6d142" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1a9sUtgeqdvEOJ308VFVoGT2iLC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-jwt-JPA/spring-boot-jwt-JPA" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Endava\SpringPractice\src\main\resources\static\CSS" />
+      <recent name="C:\Endava\SpringPractice\src\main\resources\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shamo\Desktop\Diplom\src\main\resources\static\images" />
+      <recent name="C:\Endava\SpringPractice\src\main\resources\static\CSS" />
+      <recent name="C:\Endava\SpringPractice\src\main\resources\static\images" />
+      <recent name="C:\Endava\SpringPractice\src\main\resources\db\migration" />
+      <recent name="C:\Endava\SpringPractice\src\main\resources\mytmp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MyProjectApplication">
+    <configuration name="MainControllerTest.shouldReturnAboutPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vshamota.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vshamota.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.vshamota.demo.MainControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnAboutPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vshamota.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vshamota.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.vshamota.demo.RegistrationControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrationControllerTest.shouldAddUserCredentialsInDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vshamota.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vshamota.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.vshamota.demo.RegistrationControllerTest" />
+      <option name="METHOD_NAME" value="shouldAddUserCredentialsInDB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecuredControllerSpringBootIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vshamota.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vshamota.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.vshamota.demo.SecuredControllerSpringBootIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecuredControllerSpringBootIntegrationTest.loginUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vshamota.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vshamota.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.vshamota.demo.SecuredControllerSpringBootIntegrationTest" />
+      <option name="METHOD_NAME" value="loginUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringPractice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vshamota.demo.MyProjectApplication" />
+      <option name="ACTIVE_PROFILES" value="dev" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RegistrationControllerTest" />
+      <item itemvalue="JUnit.RegistrationControllerTest.shouldAddUserCredentialsInDB" />
+      <item itemvalue="JUnit.MainControllerTest.shouldReturnAboutPage" />
+      <item itemvalue="JUnit.SecuredControllerSpringBootIntegrationTest" />
+      <item itemvalue="JUnit.SecuredControllerSpringBootIntegrationTest.loginUser" />
+      <item itemvalue="Spring Boot.MyProjectApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SecuredControllerSpringBootIntegrationTest.loginUser" />
+        <item itemvalue="JUnit.RegistrationControllerTest" />
+        <item itemvalue="JUnit.SecuredControllerSpringBootIntegrationTest" />
+        <item itemvalue="JUnit.RegistrationControllerTest.shouldAddUserCredentialsInDB" />
+        <item itemvalue="JUnit.MainControllerTest.shouldReturnAboutPage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d3f49f8-0eda-42a4-b49b-29035bd6d142" name="Default Changelist" comment="" />
+      <created>1586159162511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586159162511</updated>
+      <workItem from="1586159167844" duration="20000" />
+      <workItem from="1586159205458" duration="27357000" />
+      <workItem from="1586203294149" duration="818000" />
+      <workItem from="1586233300620" duration="29834000" />
+      <workItem from="1586277956036" duration="2333000" />
+      <workItem from="1586280622617" duration="142000" />
+      <workItem from="1586284200750" duration="39000" />
+      <workItem from="1586321992574" duration="34831000" />
+      <workItem from="1586362408317" duration="4923000" />
+      <workItem from="1586369452604" duration="1810000" />
+      <workItem from="1586411335887" duration="25329000" />
+      <workItem from="1586496075310" duration="35918000" />
+      <workItem from="1586542307488" duration="786000" />
+      <workItem from="1586579959089" duration="34688000" />
+      <workItem from="1586628606717" duration="516000" />
+      <workItem from="1586629544420" duration="164000" />
+      <workItem from="1586630045631" duration="188000" />
+      <workItem from="1586665742836" duration="32000" />
+      <workItem from="1586665791465" duration="296000" />
+      <workItem from="1586666249469" duration="52000" />
+      <workItem from="1586666451938" duration="44000" />
+      <workItem from="1586669313140" duration="36865000" />
+      <workItem from="1586753256161" duration="29632000" />
+      <workItem from="1586800801124" duration="460000" />
+      <workItem from="1586801285951" duration="246000" />
+      <workItem from="1586843399042" duration="20825000" />
+      <workItem from="1586885017730" duration="247000" />
+      <workItem from="1586932411802" duration="6933000" />
+      <workItem from="1587026105769" duration="4872000" />
+      <workItem from="1587054962506" duration="24000" />
+      <workItem from="1587109955425" duration="3195000" />
+      <workItem from="1587194410490" duration="9298000" />
+      <workItem from="1587226752589" duration="153000" />
+      <workItem from="1587282688715" duration="15219000" />
+      <workItem from="1587362344030" duration="6690000" />
+      <workItem from="1587375495995" duration="10172000" />
+      <workItem from="1587456411133" duration="2231000" />
+      <workItem from="1587535410451" duration="128000" />
+      <workItem from="1587545316472" duration="5006000" />
+      <workItem from="1587620254941" duration="2482000" />
+      <workItem from="1587975109188" duration="6967000" />
+      <workItem from="1588055051734" duration="632000" />
+      <workItem from="1588269755096" duration="781000" />
+      <workItem from="1588308581878" duration="2428000" />
+      <workItem from="1588403266622" duration="185000" />
+      <workItem from="1588424455334" duration="620000" />
+      <workItem from="1588759743109" duration="1199000" />
+      <workItem from="1588843730448" duration="90000" />
+      <workItem from="1588844598081" duration="5539000" />
+      <workItem from="1589100035027" duration="287000" />
+      <workItem from="1589298424073" duration="323000" />
+      <workItem from="1589526456342" duration="3938000" />
+      <workItem from="1589619501562" duration="1845000" />
+      <workItem from="1589693238877" duration="1847000" />
+      <workItem from="1589809353826" duration="1571000" />
+      <workItem from="1589816404968" duration="608000" />
+      <workItem from="1589884893618" duration="644000" />
+      <workItem from="1589904874661" duration="2126000" />
+      <workItem from="1589976928008" duration="18000" />
+      <workItem from="1590054233343" duration="1548000" />
+      <workItem from="1590137498323" duration="1883000" />
+      <workItem from="1590393531158" duration="784000" />
+      <workItem from="1590468239987" duration="35000" />
+      <workItem from="1590677831990" duration="1251000" />
+      <workItem from="1590740335805" duration="13794000" />
+      <workItem from="1590761846357" duration="647000" />
+      <workItem from="1590819319045" duration="1836000" />
+      <workItem from="1590831009351" duration="1828000" />
+      <workItem from="1590854468420" duration="52000" />
+      <workItem from="1591605882653" duration="1102000" />
+      <workItem from="1591783984869" duration="2213000" />
+      <workItem from="1591865617160" duration="1341000" />
+      <workItem from="1591890339891" duration="42000" />
+      <workItem from="1591949930718" duration="2781000" />
+      <workItem from="1592032921773" duration="1848000" />
+      <workItem from="1592036701050" duration="69000" />
+      <workItem from="1592122270302" duration="2827000" />
+      <workItem from="1592162082679" duration="24000" />
+      <workItem from="1592208823775" duration="2950000" />
+      <workItem from="1592396826852" duration="1873000" />
+      <workItem from="1592459013522" duration="1615000" />
+      <workItem from="1593319698979" duration="4637000" />
+      <workItem from="1593368000554" duration="614000" />
+      <workItem from="1593587485739" duration="29800000" />
+      <workItem from="1593763872724" duration="955000" />
+    </task>
+    <task id="LOCAL-00001" summary="some changes">
+      <created>1593326758470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593326758470</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1586424066158">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1586424066158" />
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1587223339226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587223339226" />
+    <state x="910" y="276" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593617318078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="910" y="276" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593617318078" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1590750982085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590750982085" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590740755405">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590740755405" />
+    <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1592036583513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592036583513" />
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586669959687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="379" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1586669959687" />
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586422169279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586422169279" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586277978467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586277978467" />
+    <state x="585" y="87" key="CommitChangelistDialog2" timestamp="1593326756901">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326756901" />
+    <state width="549" height="466" key="DebuggerActiveHint" timestamp="1586268686394">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="549" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1586268686394" />
+    <state x="597" y="261" key="FileChooserDialogImpl" timestamp="1588403447798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="597" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588403447798" />
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom" timestamp="1593346158629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593346158629" />
+    <state width="1877" height="189" key="GridCell.Tab.0.center" timestamp="1593346158628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593346158628" />
+    <state width="1877" height="189" key="GridCell.Tab.0.left" timestamp="1593346158628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593346158628" />
+    <state width="1877" height="189" key="GridCell.Tab.0.right" timestamp="1593346158628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593346158628" />
+    <state width="1877" height="189" key="GridCell.Tab.1.bottom" timestamp="1592469140647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592469140647" />
+    <state width="1877" height="189" key="GridCell.Tab.1.center" timestamp="1592469140647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592469140647" />
+    <state width="1877" height="189" key="GridCell.Tab.1.left" timestamp="1592469140647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592469140647" />
+    <state width="1877" height="189" key="GridCell.Tab.1.right" timestamp="1592469140647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="189" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592469140647" />
+    <state width="1635" height="242" key="GridCell.Tab.2.bottom" timestamp="1587225025804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1635" height="242" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587225025804" />
+    <state width="1635" height="242" key="GridCell.Tab.2.center" timestamp="1587225025804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1635" height="242" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587225025804" />
+    <state width="1635" height="242" key="GridCell.Tab.2.left" timestamp="1587225025804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1635" height="242" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587225025804" />
+    <state width="1635" height="242" key="GridCell.Tab.2.right" timestamp="1587225025804">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1635" height="242" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587225025804" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1588844782775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588844782775" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1587394896166">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587394896166" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1593326760861">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593326760861" />
+    <state x="789" y="172" width="326" height="258" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586670047941">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="789" y="172" width="326" height="258" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1586670047941" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1587456412371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587456412371" />
+    <state x="559" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586510211534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="559" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586510211534" />
+    <state x="656" y="252" width="984" height="536" key="find.popup" timestamp="1590750311029">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="252" width="984" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590750311029" />
+    <state x="342" y="222" key="new project wizard" timestamp="1590854519380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="222" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590854519380" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590751212302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590751212302" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/access/ExceptionTranslationFilter.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.2.RELEASE/spring-security-core-5.2.2.RELEASE-sources.jar!/org/springframework/security/access/vote/AffirmativeBased.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/authentication/Http403ForbiddenEntryPoint.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/csrf/CsrfFilter.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.2.RELEASE/spring-security-web-5.2.2.RELEASE-sources.jar!/org/springframework/security/web/csrf/CsrfFilter.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Diplom$MainControllerTest.ic" NAME="MainControllerTest Coverage Results" MODIFIED="1590742054261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.vshamota.demo.*</FILTER>
+    </SUITE>
+  </component>
+</project>
